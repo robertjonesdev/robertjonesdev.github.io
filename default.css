@@ -1,19 +1,11 @@
 body {
     font-family: Lato;
     color: white;
-    background: #ecf0f1;
+    background: rgba(0,0,0,0.1);
 }
 
 html {
     height:100%;
-}
-
-#content {
-    text-align: center;
-    padding-top: 25%;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-                 0px 8px 13px rgba(0,0,0,0.1),
-                 0px 18px 23px rgba(0,0,0,0.01);
 }
 
 h1 {
@@ -21,8 +13,30 @@ h1 {
     font-size: 5em;
 }
 
+h6 {
+    color: black;
+}
+
 hr {
     width: 400px;
     border-top: 1px solid #f8f8f8;
     border-botton: 1px solid rgba(0,0,0.2);
+}
+
+a .hover-after {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+a:hover .hover-before {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+a:hover .hover-after {
+    display: inline;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 0.5s linear;
 }
