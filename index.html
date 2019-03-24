@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark m-0 p-1">
         <div class="container">
             <div class="container">
             <div class="row">
@@ -42,7 +42,7 @@
                           </div>
                       </span>
                     </a>
-                </div>
+            </div>
             </div>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -51,13 +51,15 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://github.com/robertjonesdev">GitHub</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
         </nav>
+
 
         <div class="container mt-4">
             <div class="jumbotron p-4">
@@ -70,7 +72,7 @@
                         <p class="lead text-secondary">I am a student of Computer Science at Oregon State University. Prior to life in software development,
                             I enjoyed a career in commercial banking having obtained a degree in Economics from Texas A&M University.</p>
                         <p class="lead">
-                          <a class="btn btn-secondary btn-md" href="#" role="button">
+                          <a class="btn btn-secondary btn-md" href="index.html#projects" role="button">
                               <span class="hover-before">View My Projects</span>
                               <span class="hover-after"><i class="fas fa-code-branch mr-2"></i>View My Projects</span>
                           </a>
@@ -80,9 +82,48 @@
             </div>
         </div>
 
+        <br><br>
+        <div class="container" id="projects">
+            <h2 class="text-secondary">Software Projects</h2>
+            <hr />
 
+            <div class="col-md-12">
+              <img class="rounded img-thumbnail float-right ml-2" src="proj1-screen.JPG" width="35%">
+                <h5 class="card-title text-secondary">Console-based RPG</h5>
+                <p class="text-secondary">
+                    “Myrddin Emry’s Realm” is a single-player, text-based role playing game developed in C++ using object-oriented programming
+                    concepts. The character, Myrddin Emrys, starts in a virtual, mapped world. The player can move
+                     north, south, east or west through the map, depending on available paths. Myrddin will encounter locked
+                      doors, items, healing potions, and eventually a Red Dragon. To win, the player must avoid death and defeat the Red Dragon.
+                </p>
+                <p class="text-secondary">C++ & OOP Concepts Implemented</p>
+                <ul class="text-secondary">
+                    <li>Classes & Objects</li>
+                    <li>Inheritance and Polymorphism</li>
+                    <li>Dynamic Memory Allocation</li>
+                    <li>File Input</li>
+                    <li>Vectors</li>
+                    <li>Hash Map</li>
+                </ul>
+                <p class="text-secondary">Development Tools Used:</p>
+                 <ul class="text-secondary">
+                     <li>Atom IDE</li>
+                     <li>Linux Command Line (Ubuntu)</li>
+                     <li>GCC - GNU Compiler Collection</li>
+                     <li>Valgrind - Memory management bug detection</li>
+                     <li>GDB - GNU Debugger</li>
+                 </ul>
+                <a class="btn btn-secondary btn-md" href="https://github.com/robertjonesdev/OOP-Console-RPG" role="button">
+                    <span class="hover-before">GitHub Repository</span>
+                    <span class="hover-after"><i class="fab fa-github mr-2"></i>GitHub Repository</span>
+                </a>
+
+        </div>
+
+        <hr />
 
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="smoothscroll.js"></script>
     </body>
 </html>
