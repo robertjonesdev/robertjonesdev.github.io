@@ -40,3 +40,11 @@ a:hover .hover-after {
     opacity: 1;
     transition: visibility 1s, opacity 0.5s linear;
 }
+
+@media (max-width: 575px) {
+   button.navbar-toggler {
+       position: absolute !important;
+       right: 10px !important;
+       top: 14px !important;
+   }
+}
