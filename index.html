@@ -7,7 +7,7 @@
         <link rel="icon" href="favicon-code-fork.ico">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
-        <link rel="stylesheet" href="default.css">
+        <link rel="stylesheet" href="css/default.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body onload="typeWriter();">
@@ -51,10 +51,10 @@
 
           <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="https://github.com/robertjonesdev">GitHub</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="https://github.com/robertjonesdev">GitHub</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item ml-auto"><a class="nav-link" href="#">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -64,14 +64,14 @@
             <div class="jumbotron p-4">
                 <div class="row">
                     <div class="col-lg-4">
-                        <img class="rounded-circle img-fluid mystyle" src="facesquare.jpg">
+                        <img class="rounded-circle img-fluid mystyle" src="images/facesquare.jpg">
                     </div>
                     <div class="col-lg-8 align-self-end">
                         <p class="display-4 text-secondary" id="typewriter"></p>
                         <p class="lead text-secondary">I am a student of Computer Science at Oregon State University. Prior to life in software development,
                             I enjoyed a career in commercial banking having obtained a degree in Economics from Texas A&M University.</p>
                         <p class="lead">
-                          <a class="btn btn-secondary btn-md" href="index.html#projects" role="button">
+                          <a class="btn btn-secondary btn-md" href="#projects" role="button">
                               <span class="hover-before">View My Projects</span>
                               <span class="hover-after"><i class="fas fa-code-branch mr-2"></i>View My Projects</span>
                           </a>
@@ -80,14 +80,16 @@
                 </div>
             </div>
         </div>
-
-        <!-- <br><br> -->
-        <div class="container pt-10" id="projects">
+        <!-- <br><br><br>
+        <br><br><br>
+        <br><br><br> -->
+        <div class="mx-auto" style="height: 400px"></div>
+        <div class="container" id="projects">
             <h2 class="text-secondary">Software Projects</h2>
             <hr />
 
-            <div class="col-md-12">
-              <img class="rounded img-thumbnail float-right ml-2" src="proj1-screen.JPG" width="35%">
+            <div class="col-md-12 pb-10">
+              <img class="rounded img-thumbnail float-right ml-2" src="images/proj1-screen.JPG" width="35%">
                 <h5 class="card-title text-secondary">Console-based RPG</h5>
                 <p class="text-secondary">
                     “Myrddin Emry’s Realm” is a single-player, text-based role playing game developed in C++ using object-oriented programming
@@ -95,42 +97,70 @@
                      north, south, east or west through the map, depending on available paths. Myrddin will encounter locked
                       doors, items, healing potions, and eventually a Red Dragon. To win, the player must avoid death and defeat the Red Dragon.
                 </p>
-                <p class="text-secondary">C++ & OOP Concepts Implemented</p>
-                <ul class="text-secondary">
-                    <li>Classes and Objects</li>
-                    <li>Inheritance and Polymorphism</li>
-                    <li>Dynamic Memory Allocation</li>
-                    <li>File Input</li>
-                    <li>Vectors</li>
-                    <li>Hash Map</li>
-                </ul>
-                <p class="text-secondary">Development Tools Used:</p>
-                 <ul class="text-secondary">
-                     <li>Atom IDE</li>
-                     <li>Linux Command Line (Ubuntu)</li>
-                     <li>GCC - GNU Compiler Collection</li>
-                     <li>Valgrind - Memory management bug detection</li>
-                     <li>GDB - GNU Debugger</li>
-                 </ul>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="text-secondary">C++ & OOP Concepts Implemented</p>
+                        <ul class="text-secondary">
+                            <li>Classes and Objects</li>
+                            <li>Inheritance and Polymorphism</li>
+                            <li>Dynamic Memory Allocation</li>
+                            <li>File Input</li>
+                            <li>Vectors</li>
+                            <li>Hash Map</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                    <p class="text-secondary">Development Tools Used:</p>
+                         <ul class="text-secondary">
+                             <li>Atom IDE</li>
+                             <li>Linux Command Line (Ubuntu)</li>
+                             <li>GCC - GNU Compiler Collection</li>
+                             <li>Valgrind Memory Management</li>
+                             <li>Makefiles</li>
+                             <li>GDB - GNU Debugger</li>
+                         </ul>
+                    </div>
+                </div>
                 <a class="btn btn-secondary btn-md" href="https://github.com/robertjonesdev/OOP-Console-RPG" role="button">
                     <span class="hover-before">GitHub Repository</span>
                     <span class="hover-after"><i class="fab fa-github mr-2"></i>GitHub Repository</span>
                 </a>
+            </div>
+            <hr />
+            <div class="col-md-12">
+              <!-- <img class="rounded img-thumbnail float-left ml-2" src="proj2-screen.JPG" width="35%"> -->
+                <h5 class="card-title text-secondary">This Website</h5>
+                <p class="text-secondary">
+                    My personal website was born out of a web development course of my computer science education. The website is hosted as a GitHub
+                    repository. Using Google Domains, the Address/Host record links the robertjones.dev domain to the GitHub repository IP Address.
+                    More information about using GitHub Pages and Google Domains together can be found in <a href="https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58">this article.</a>
+                </p>
+                <p class="text-secondary">Languages and Frameworks</p>
+                <ul class="text-secondary">
+                    <li>HTML 5.0</li>
+                    <li>CSS</li>
+                    <li>Bootstrap 4.0</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                </ul>
+                <a class="btn btn-secondary btn-md" href="https://github.com/robertjonesdev/robertjonesdev.github.io" role="button">
+                    <span class="hover-before">GitHub Repository</span>
+                    <span class="hover-after"><i class="fab fa-github mr-2"></i>GitHub Repository</span>
+                </a>
+            </div>
+            <hr />
+        </div>/
 
-        </div>
 
-        <hr />
-        <script>
+        <script type="text/javascript">
         // Source: https://www.w3schools.com/howto/howto_js_typewriter.asp
             var i = 0;
             var txt = 'Hello. I am Robert.';
-            var speed = 50;
-
             function typeWriter() {
               if (i < txt.length) {
                 document.getElementById("typewriter").innerHTML += txt.charAt(i);
                 i++;
-                setTimeout(typeWriter, speed);
+                setTimeout(typeWriter, 90);
               }
             }
         </script>
