@@ -1,3 +1,9 @@
+<!--
+    Examples:
+    mxstbr.com 
+    egghead.io/portfolios
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +45,7 @@
 
 <section class="bg-gray-100">
     <div class="container mx-auto py-16 p-4 lg:px-32 grid gap-8 lg:gap-32 lg:grid-cols-2">
-        <figure>
+        <article class="prose lg:prose-xl">
             <h2 class="text-2xl">
                 Experience
             </h2>
@@ -55,7 +61,7 @@
                 <span class="font-bold">Teaching Assitant</span> 
                 at Oregon State University, 1 term
             </p>
-        </figure>
+        </article>
 
         <figure class="grid grid-cols-4 gap-4 flex items-center justify-center">
             <img src="images/javascript.png" alt="Javascript">
@@ -67,13 +73,45 @@
             <img src="images/azure.png" alt="Microsoft Azure">
             <img src="images/bank.png" alt="Financial Services">
         </figure>
+    </div>
+</section>
 
+
+
+<section class="bg-gray-200">
+    <div class="container mx-auto py-16 px-4 lg:px-32 flex flex-col items-center text-center">
+        <article class="prose lg:prose-xl">
+            <h2 class="text-2xl">
+                Projects
+            </h2>
+        </article>
+        <div class="pt-8 grid gap-8 lg:gap-8 lg:grid-cols-3">
+            <figure>
+                <img src="images/PawSwipe.png"  alt="Mobile Friend Web App">
+                <figcaption>
+                    <p><span class="font-bold">Paw Swipe</span> <br/>
+                    A full-stack pet adoption web app built with
+                    React, GraphQL, Django/Python </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>           
+                    <p><span class="font-bold">Event Finder</span> <br/> 
+                    React App built on top of an existing .NET CRM platform.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                <p><span class="font-bold">Small Shell</span> <br/> 
+                    A simple linux shell written in the C programming language.</p>
+                </figcaption>
+            </figure>
+        </div>
     </div>
 </section>
 
 <section class="bg-white">
     <div class="container mx-auto py-16 p-4 lg:px-32  grid gap-8 lg:gap-32 lg:grid-cols-2">
-
         <figure class="grid grid-cols-2 gap-8">
             <div class="text-center">
                 <img src="images/osu.png" />
@@ -87,7 +125,7 @@
             </div>
         </figure>
 
-        <figure>
+        <article class="prose lg:prose-xl">
             <h2 class="text-2xl">
                 Education
             </h2>
@@ -95,32 +133,15 @@
                 My formal education inludes two bachelor of science degrees from Oregon State University 
                 in Computer Science with a 4.0 GPA and from Texas A&M University in Economics with a less-than-4.0 GPA.    
             </p>
-        </figure>
-
+        </article>
     </div>
 </section>
 
-<section class="bg-gray-200">
-    <div class="container mx-auto py-16 p-4 lg:px-32 grid gap-8 lg:gap-32 lg:grid-cols-2">
-
-        <figure>
-            <h2 class="text-2xl">
-                Projects
-            </h2>
-            <p><span class="font-bold">Paw Swipe</span> - React, GraphQL, Django/Python Pet Adoption App</p>
-            <p><span class="font-bold">Event Finder</span> - React App built on top of an existing .NET CRM platform.</p>
-            <p><span class="font-bold">Small Shell</span> - a simple linux shell written in the C programming language.</p>
-        </figure>
-        <figure>
-            Image
-        </figure>
-
-    </div>
-</section>
 
 <section class="bg-gray-800">
-    <div class="container mx-auto py-16 px-4 lg:px-32 bg-gray-800 text-white text-center">
 
+    <div class="container mx-auto py-16 px-4 lg:px-32 bg-gray-800 text-white text-center">
+        
         <h1 class="text-3xl py-4 font-bold">
             Robert Jones
         </h1>
@@ -130,6 +151,7 @@
         </button>
 
     </div>
+
 </section>
 
 </body>
