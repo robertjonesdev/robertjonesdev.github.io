@@ -1,160 +1,159 @@
+<!--
+    Examples:
+    mxstbr.com 
+    egghead.io/portfolios
+-->
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Robert Jones</title>
-        <link rel="icon" href="favicon-code-fork.ico">
-        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,700">
-        <link rel="stylesheet" type="text/css" href="css/default.css">
-        <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon-code-fork.ico">
+    <title>Robrt Jones</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style>
+        body {
+            color: #24272a;
+        }
+        section p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
 
-    </head>
-    <body onload="typeWriter();">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-0 pt-0 pb-0">
-        <div class="container pl-2">
-            <div class="container">
-                <div class="row">
-                    <a class="navbar-brand pb-0" href="#">
-                        <span class="hover-before">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="row">ROBERT JONES</div>
-                                    <div class="row"><h6 class="nav-item p-0 text-muted">Software Developer</h6></div>
-                               </div>
-                               <div class="col">
-                                   <div class="row"></div>
-                               </div>
-                            </div>
-                       </span>
-                       <span class="hover-after">
-                           <div class="row">
-                               <div class="col">
-                                   <div class="row">ROBERT JONES</div>
-                                   <div class="row"><h6 class="nav-item p-0 text-muted">Software Developer</h6></div>
-                              </div>
-                              <div class="col align-self-center">
-                                  <div class="row pl-2"><i class="fas fa-home shadow text-secondary"></i></div>
-                              </div>
-                          </div>
-                      </span>
-                    </a>
-                </div>
-            </div>
+<body>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+<section class="bg-white">
+    <div class="container mx-auto py-16 px-4 lg:px-32 flex flex-col items-center text-center">
+        <img class="rounded-full w-1/2 lg:w-1/5 pb-4" src="images/facesquare.jpg">
 
-          <div class="collapse navbar-collapse ml-auto" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item ml-auto"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item ml-auto"><a class="nav-link" href="https://github.com/robertjonesdev">GitHub</a></li>
-                <li class="nav-item ml-auto"><a class="nav-link" href="#">About</a></li>
-                <li class="nav-item ml-auto"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
-          </div>
+        <h1 class="text-3xl font-bold">
+            Robert Jones
+        </h1>
+
+        <h3 class="text-2xl">
+            Software Developer
+        </h3>
+    </div>
+</section>
+
+<section class="bg-gray-100">
+    <div class="container mx-auto py-16 p-4 lg:px-32 grid gap-8 lg:gap-32 lg:grid-cols-2">
+        <article class="prose lg:prose-xl">
+            <h2 class="text-2xl">
+                Experience
+            </h2>
+            <p>
+                <span class="font-bold">Software Developer</span> 
+                at BEMA Software Services, 2 years
+            </p>
+            <p>
+                <span class="font-bold">Credit & Compliance Officer</span> 
+                at BTH Bank, NA, 9 years
+            </p>
+            <p>
+                <span class="font-bold">Teaching Assitant</span> 
+                at Oregon State University, 1 term
+            </p>
+        </article>
+
+        <figure class="grid grid-cols-4 gap-4 flex items-center justify-center">
+            <img src="images/javascript.png" alt="Javascript">
+            <img src="images/react.png" alt="React">
+            <img src="images/graphql.png" alt="GraphQL">
+            <img src="images/github.png" alt="GitHub">
+            <img src="images/dotnet.png" alt="Microsoft DotNet">
+            <img src="images/sql.png" alt="Amazon Web Servies">
+            <img src="images/azure.png" alt="Microsoft Azure">
+            <img src="images/bank.png" alt="Financial Services">
+        </figure>
+    </div>
+</section>
+
+
+
+<section class="bg-gray-200">
+    <div class="container mx-auto py-16 px-4 lg:px-32 flex flex-col items-center text-center">
+        <article class="prose lg:prose-xl">
+            <h2 class="text-2xl">
+                Projects
+            </h2>
+        </article>
+        <div class="pt-8 grid gap-8 lg:gap-8 lg:grid-cols-3">
+            <figure>
+                <img src="images/PawSwipe.png"  alt="Mobile Friend Web App">
+                <figcaption>
+                    <p><span class="font-bold">Paw Swipe</span> <br/>
+                    A full-stack pet adoption web app built with
+                    React, GraphQL, Django/Python </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>           
+                    <p><span class="font-bold">Event Finder</span> <br/> 
+                    React App built on top of an existing .NET CRM platform.</p>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                <p><span class="font-bold">Small Shell</span> <br/> 
+                    A simple linux shell written in the C programming language.</p>
+                </figcaption>
+            </figure>
         </div>
-        </nav>
+    </div>
+</section>
 
-        <div class="container mt-4">
-            <div class="jumbotron p-4">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img class="rounded-circle img-fluid mystyle" src="images/facesquare.jpg">
-                    </div>
-                    <div class="col-md-8 align-self-end">
-                        <p class="display-4 text-secondary" id="typewriter"></p>
-                        <p class="lead text-secondary">I am a student of Computer Science at Oregon State University. Prior to life in software development,
-                            I enjoyed a career in commercial banking having obtained a degree in Economics from Texas A&M University.</p>
-                        <p class="lead">
-                          <a class="btn btn-secondary btn-md" href="#projects" role="button">
-                              <span class="hover-before">View My Projects</span>
-                              <span class="hover-after"><i class="fas fa-code-branch mr-2"></i>View My Projects</span>
-                          </a>
-                        </p>
-                    </div>
-                </div>
+<section class="bg-white">
+    <div class="container mx-auto py-16 p-4 lg:px-32  grid gap-8 lg:gap-32 lg:grid-cols-2">
+        <figure class="grid grid-cols-2 gap-8">
+            <div class="text-center">
+                <img src="images/osu.png" />
+                <span class="font-bold">Computer Science</span><br/>
+                <span class="italic">Bachelor of Science</span>
             </div>
-        </div>
-        <div class="mx-auto" style="height: 400px"></div>
-        <div class="container" id="projects">
-            <h2 class="text-secondary">Software Projects</h2>
-            <hr />
-
-            <div class="col-md-12 pb-10">
-              <img class="rounded img-thumbnail float-right ml-2" src="images/proj1-screen.JPG" width="35%">
-                <h5 class="card-title text-secondary">Console-based RPG</h5>
-                <p class="text-secondary">
-                    “Myrddin Emry’s Realm” is a single-player, text-based role playing game developed in C++ using object-oriented programming
-                    concepts. The character, Myrddin Emrys, starts in a virtual, mapped world. The player can move
-                     north, south, east or west through the map, depending on available paths. Myrddin will encounter locked
-                      doors, items, healing potions, and eventually a Red Dragon. To win, the player must avoid death and defeat the Red Dragon.
-                </p>
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="text-secondary">C++ & OOP Concepts Implemented</p>
-                        <ul class="text-secondary">
-                            <li>Classes and Objects</li>
-                            <li>Inheritance and Polymorphism</li>
-                            <li>Dynamic Memory Allocation</li>
-                            <li>File Input</li>
-                            <li>Vectors</li>
-                            <li>Hash Map</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                    <p class="text-secondary">Development Tools Used:</p>
-                         <ul class="text-secondary">
-                             <li>Atom IDE</li>
-                             <li>Linux Command Line (Ubuntu)</li>
-                             <li>GCC - GNU Compiler Collection</li>
-                             <li>Valgrind Memory Management</li>
-                             <li>Makefiles</li>
-                             <li>GDB - GNU Debugger</li>
-                         </ul>
-                    </div>
-                </div>
-                <a class="btn btn-secondary btn-md" href="https://github.com/robertjonesdev/OOP-Console-RPG" role="button">
-                    <span class="hover-before">GitHub Repository</span>
-                    <span class="hover-after"><i class="fab fa-github mr-2"></i>GitHub Repository</span>
-                </a>
-                <a class="btn btn-secondary btn-md" href="https://repl.it/@robertjonesdev/OOP-Console-RPG" role="button">
-                    <span class="hover-before">Run with Repl.it</span>
-                    <span class="hover-after">Run with Repl.it</span>
-                </a>
+            <div class="text-center">
+                <img src="images/tamu.jpg" />
+                <span class="font-bold">Economics</span><br/>
+                <span class="italic">Bachelor of Science</span>
             </div>
-            <hr />
-            <div class="col-md-12">
-              <!-- <img class="rounded img-thumbnail float-left ml-2" src="proj2-screen.JPG" width="35%"> -->
-                <h5 class="card-title text-secondary">This Website</h5>
-                <p class="text-secondary">
-                    My personal website was born out of a web development course of my computer science education. The website is hosted as a GitHub
-                    repository. Using Google Domains, the Address/Host record links the robertjones.dev domain to the GitHub repository IP Address.
-                    More information about using GitHub Pages and Google Domains together can be found in <a href="https://dev.to/trentyang/how-to-setup-google-domain-for-github-pages-1p58">this article.</a>
-                </p>
-                <p class="text-secondary">Languages and Frameworks</p>
-                <ul class="text-secondary">
-                    <li>HTML 5.0</li>
-                    <li>CSS</li>
-                    <li>Bootstrap 4.0</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
-                <a class="btn btn-secondary btn-md" href="https://github.com/robertjonesdev/robertjonesdev.github.io" role="button">
-                    <span class="hover-before">GitHub Repository</span>
-                    <span class="hover-after"><i class="fab fa-github mr-2"></i>GitHub Repository</span>
-                </a>
-            </div>
-            <hr />
-        </div>
+        </figure>
+
+        <article class="prose lg:prose-xl">
+            <h2 class="text-2xl">
+                Education
+            </h2>
+            <p style="text-align:justify;">
+                My formal education inludes two bachelor of science degrees from Oregon State University 
+                in Computer Science with a 4.0 GPA and from Texas A&M University in Economics with a less-than-4.0 GPA.    
+            </p>
+        </article>
+    </div>
+</section>
 
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/smoothscroll.js"></script>
-        <script type="text/javascript" src="js/typewriter.js"></script>
-    </body>
+<section class="bg-gray-800">
+
+    <div class="container mx-auto py-16 px-4 lg:px-32 bg-gray-800 text-white text-center">
+        
+        <h1 class="text-3xl py-4 font-bold">
+            Robert Jones
+        </h1>
+        <button 
+            class="bg-gray-200 rounded px-6 py-2 text-gray-800 hover:opacity-50 border-none " >
+            Contact me directly
+        </button>
+
+    </div>
+
+</section>
+
+</body>
+
 </html>
